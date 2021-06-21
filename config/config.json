@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "tine-merkegruppe-navigasjon-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tineMerkegruppeNavigasjon/TineMerkegruppeNavigasjonWebPart.js",
+          "manifest": "./src/webparts/tineMerkegruppeNavigasjon/TineMerkegruppeNavigasjonWebPart.manifest.json"
+        }
+      ]
+    },
+    "tine-merkegruppe-filbehandler-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tineMerkegruppeFilbehandler/TineMerkegruppeFilbehandlerWebPart.js",
+          "manifest": "./src/webparts/tineMerkegruppeFilbehandler/TineMerkegruppeFilbehandlerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TineMerkegruppeNavigasjonWebPartStrings": "lib/webparts/tineMerkegruppeNavigasjon/loc/{locale}.js",
+    "TineMerkegruppeFilbehandlerWebPartStrings": "lib/webparts/tineMerkegruppeFilbehandler/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
